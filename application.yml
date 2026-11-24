@@ -35,20 +35,19 @@ lavalink:
     resamplingQuality: LOW
     youtubeSearchEnabled: false
     soundcloudSearchEnabled: true
+  plugins:
+    youtube:
+      enabled: true
+      allowSearch: true
+      allowDirectVideoIds: true
+      clients:
+        - MUSIC
+        - WEB
+        - WEBEMBEDDED
 
 plugins:
   - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.2"
     repository: "https://maven.lavalink.dev/releases"
-
-plugins:
-  youtube:
-    enabled: true
-    allowSearch: true
-    allowDirectVideoIds: true
-    clients:
-      - MUSIC
-      - WEB
-      - WEBEMBEDDED
 
 logging:
   level:
